@@ -60,3 +60,9 @@ body{
 .desc{
     text-transform: capitalize;
 }
+
+
+.weather.loading{
+    visibility: hidden;
+    display: none;
+}

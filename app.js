@@ -19,6 +19,7 @@ let weather = {
         document.querySelector(".desc").innerText = description;
         document.querySelector(".humidity").innerText = humidity + "%";
         document.querySelector(".wind").innerText = speed + "km/h";
+        document.querySelector(".weather").classList.remove("loading")
  
     },
     searchWeather: function(){
