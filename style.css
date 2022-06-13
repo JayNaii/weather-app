@@ -8,7 +8,7 @@ body{
     height: 100vh;
     margin: 0;
     background:black;
-    background-image: url("https://source.unsplash.com/random/1920x1080/?landscape");
+    background-image: url("https://source.unsplash.com/random/3840x2160/?landscape");
 }
 
 .card{
@@ -35,14 +35,28 @@ body{
     justify-content: center;
     padding: 0.6em;
     border-radius: 2em;
-    border: 1px solid;
+    border: 1px solid rgb(0, 0, 0);
     margin-left: 1em;
-    background: rgb(211, 209, 209);
+    background: rgb(211, 209, 209,0.2);
+}
+
+.search-button:hover{
+    background: rgb(201, 200, 200);
+    cursor: pointer;
 }
 
 .search-bar{
-    background: rgb(211, 209, 209);
+    background: rgba(221, 219, 219, 0.5);
     border: none;
     border-radius: 20px;
     font-size: 120%;
+    width: calc(100% - 50px);
+}
+
+.search-bar:focus{
+    outline: none;
+}
+
+.desc{
+    text-transform: capitalize;
 }
