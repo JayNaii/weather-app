@@ -1,0 +1,48 @@
+*{
+    font-family: 'Comfortaa', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background:black;
+    background-image: url("https://source.unsplash.com/random/1920x1080/?landscape");
+}
+
+.card{
+    margin: 1em;
+    background-color: rgb(197, 191, 191,0.80);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search-icon{
+    width: 20px;
+}
+
+.search-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em;
+    border-radius: 2em;
+    border: 1px solid;
+    margin-left: 1em;
+    background: rgb(211, 209, 209);
+}
+
+.search-bar{
+    background: rgb(211, 209, 209);
+    border: none;
+    border-radius: 20px;
+    font-size: 120%;
+}
