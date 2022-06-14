@@ -10,6 +10,7 @@ let weather = {
     },
     displayWeather: function(data){
         const {name} = data;
+        const {country} = data.sys;
         const {icon, description} = data.weather[0];
         const {temp,humidity} = data.main;
         const {speed} = data.wind;
@@ -19,7 +20,8 @@ let weather = {
         document.querySelector(".desc").innerText = description;
         document.querySelector(".humidity").innerText = humidity + "%";
         document.querySelector(".wind").innerText = speed + "km/h";
-        document.querySelector(".weather").classList.remove("loading")
+        document.querySelector(".weather").classList.remove("loading");
+        document.querySelector(".country").innerText = country;
  
     },
     searchWeather: function(){
